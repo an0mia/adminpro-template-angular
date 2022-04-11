@@ -19,14 +19,6 @@ import { PagesComponent } from './pages/pages.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NotpagefoundComponent,
-    DashboardComponent,
-    BreadcrumbsComponent,
-    SidebarComponent,
-    HeaderComponent,
-    ProgressComponent,
-    Grafic1Component,
-    PagesComponent
   ],
   imports: [
     BrowserModule,
