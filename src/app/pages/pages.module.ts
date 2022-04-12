@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 // Modules
 import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from '../components/components.module';
 //import { AppRoutingModule } from '../app-routing.module';
 
 // Components
@@ -32,6 +33,7 @@ import { ProgressComponent } from './progress/progress.component';
     RouterModule,
     FormsModule,
     SharedModule,
+    ComponentsModule,
     //AppRoutingModule
   ]
 })
