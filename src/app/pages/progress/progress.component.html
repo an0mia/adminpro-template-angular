@@ -6,9 +6,10 @@
                 <!-- Progress Bar -->
                 <div class="progress m-t-20">
                     <div class="progress-bar bg-info progress-bar-striped active" style="height:20px;"
-                    role="progressbar"></div>
+                        [style.width]="getProgreso1"
+                        role="progressbar">
+                    </div>
                 </div>
-                <!-- [style.width]="getPorcentaje" -->
             </div>
         </div>
     </div>
@@ -18,10 +19,11 @@
                 <h4 class="card-title">Striped Progress Bar</h4>
                 <!-- Progress Bar -->
                 <div class="progress m-t-20">
-                    <div class="progress-bar bg-info progress-bar-striped active" style="height:20px;"
-                    role="progressbar"></div>
+                    <div class="progress-bar bg-primary progress-bar-striped active" style="height:20px;"
+                        [style.width]="getProgreso2"
+                        role="progressbar">
+                    </div>
                 </div>
-                <!-- [style.width]="getPorcentaje" -->
             </div>
         </div>
     </div>
@@ -33,7 +35,10 @@
             <div class="card-body">
 
                 <!-- Controls Progress -->
-                <app-controls-progress></app-controls-progress>
+                <app-controls-progress 
+                (emiteValor)="progreso1 = $event"
+                [progreso]="progreso1"> 
+                </app-controls-progress>
                 
             </div>
         </div>
@@ -44,7 +49,10 @@
             <div class="card-body">
                 
                 <!-- Controls Progress -->
-                <app-controls-progress></app-controls-progress>
+                <app-controls-progress
+                (emiteValor)="progreso2 = $event"
+                [progreso]="progreso2">
+                </app-controls-progress>
 
             </div>
         </div>
