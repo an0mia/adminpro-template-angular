@@ -1,79 +1,17 @@
 <div class="row">
     <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <h3>Sales</h3>
-                <div>
-                    <div>
-                      <div style="display: block">
-                        <canvas baseChart
-                          [data]="doughnutChartData"
-                  
-                          [type]="doughnutChartType">
-                        </canvas>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
+        <app-donut
+        [data]="data1"
+        [labels]="labels1"
+        title="Compras">
+        </app-donut>
     </div>
 
     <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <h3>Sales</h3>
-                <div>
-                    <div>
-                      <div style="display: block">
-                        <canvas baseChart
-                          [data]="doughnutChartData"
-                  
-                          [type]="doughnutChartType">
-                        </canvas>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <h3>Sales</h3>
-                <div>
-                    <div>
-                      <div style="display: block">
-                        <canvas baseChart
-                          [data]="doughnutChartData"
-                  
-                          [type]="doughnutChartType">
-                        </canvas>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <h3>Sales</h3>
-                <div>
-                    <div>
-                      <div style="display: block">
-                        <canvas baseChart
-                          [data]="doughnutChartData"
-                  
-                          [type]="doughnutChartType">
-                        </canvas>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
+    <app-donut
+    [data]="data2"
+    [labels]="labels2"
+    title="Compras">
+    </app-donut>
     </div>
 </div>

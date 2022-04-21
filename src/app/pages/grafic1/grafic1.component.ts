@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { ChartData, ChartEvent, ChartType, } from 'chart.js';
 
 @Component({
@@ -9,25 +9,24 @@ import { ChartData, ChartEvent, ChartType, } from 'chart.js';
 })
 export class Grafic1Component {
 
-  // Doughnut https://valor-software.com/ng2-charts/#DoughnutChart
-  public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
-  public doughnutChartData: ChartData<'doughnut'> = {
-    labels: this.doughnutChartLabels,
+  public labels1: string[] = ['Label01', 'Label02', 'Label03'];
+  public data1 = {
+    labels: this.labels1,
     datasets: [
-      { data: [ 350, 450, 100 ] },
+      { data: [ 99, 50, 60 ] },
       { data: [ 50, 150, 120 ] },
-      { data: [ 250, 130, 70 ] }
+      { data: [ 250, 160, 70 ] }
     ]
   };
-  public doughnutChartType: ChartType = 'doughnut';
 
-  // events
-  public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
-    console.log(event, active);
-  }
-
-  public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
-    console.log(event, active);
-  }
+  public labels2: string[] = ['Label01', 'Label02', 'Label03'];
+  public data2 = {
+    labels: this.labels2,
+    datasets: [
+      { data: [ 99, 50, 60 ] },
+      { data: [ 50, 150, 120 ] },
+      { data: [ 250, 160, 70 ] }
+    ]
+  };
 
 }
